@@ -10,8 +10,10 @@ $(call inherit-product, device/oneplus/sm8150-common/common.mk)
 $(call inherit-product, vendor/oneplus/guacamoleb/guacamoleb-vendor.mk)
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
+PRODUCT_PACKAGES += \
+    FrameworksResGuacamoleb \
+    SettingsProviderResGuacamoleb \
+    SystemUIResGuacamoleb
 
 # Audio
 PRODUCT_COPY_FILES += \
